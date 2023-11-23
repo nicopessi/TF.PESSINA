@@ -1,0 +1,196 @@
+@import "variables";
+@import "pagina";
+@import "navegador";
+@import "body";
+@import "main";
+
+@mixin pad-list-flex{
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    grid-area: header;
+}
+.info {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 8px;
+    width: 95%;
+    min-height: 300px;
+    margin: 0 auto ;
+    background-color: $blanco;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.intro-img {
+    width: 250px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+    
+.titulo{
+    font-size: x-large;
+    font-family: 'Nunito Sans', sans-serif;
+    color: $rojo;
+    padding: 50px;
+    }
+
+.carousel1{
+    width: 70%;
+    padding: 150px;
+    height: 50px;
+    margin: 0 auto ;
+    background-color: $blanco;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+     }
+
+.carousel2{
+    width: 300px;
+    padding: 150px;
+    display: flex
+}
+.carousel{
+    @extend carousel2;
+    justify-content: space-between;
+    align-items: center;
+
+  
+}
+.descripcion{
+    font-size:large;
+    font-family: 'Nunito Sans', sans-serif;
+    color: $rojo;
+    padding: 50px;
+
+}
+.Intro{
+      @include pad-list-flex;
+}
+.Intro2{
+    @include pad-list-flex;
+    }
+.Intro3{
+    @include pad-list-flex;
+}
+.casilla1{
+    padding: 10px;
+    display: flex;
+}
+ul .if {
+    width: 50px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0.7rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact .contact__item {
+    list-style: none;
+    flex: 1;
+}
+
+
+.inst{
+    border-radius:  30px;
+}
+.fb{
+    border-radius: 100px;
+}
+.wp{
+    border-radius: 100px;
+}
+
+.galeriaFotos{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: $rojo;
+}
+.fotos {
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+.intro4{
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: $blanco;
+        list-style-type: none;
+        display: flex;
+    }
+
+.formulario{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    }
+label{
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 1200px)  {
+    .menu{
+        font-size:24px;
+        padding: 50px;        
+    }
+
+    .info {
+        flex-direction: row;
+        gap: 12px;
+        width: 70%;
+    }
+
+    .contact {
+        justify-content: flex-end;
+        gap: 12px;
+    }
+
+    .contact .contact__item {
+        flex: unset;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .pagina{
+        background-color:$beige;
+    }
+    .menu a {
+            color: $negro;
+        }
+    .titulo{
+        color: $negro;
+    }
+
+      }
+

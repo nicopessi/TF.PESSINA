@@ -1,0 +1,10 @@
+.pagina{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    > * {
+        grid-column: 1 / -1;
+    }
+}

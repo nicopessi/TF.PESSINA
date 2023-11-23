@@ -1,0 +1,36 @@
+.nav{
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;
+    background-color: $blanco;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+nav .logo{
+            padding: 20px;  
+            min-width: 100px; 
+            width: 150px;
+}
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content:right;
+
+    font-size: 12px;
+    padding: 24px;
+
+    flex-wrap: wrap;
+    a{
+        color: $rojo;
+        text-decoration: none;
+        padding: 0.7rem;
+    }
+    a:hover{
+        background-color: $blanco;
+        color: $beige;
+        border-radius: 0.7rem;
+    }
+}
