@@ -1,13 +1,21 @@
 {
   "name": "segunda-pre-entrega-main",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/estilo.scss css/estilo.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "build-css": "node-sass ./scss/estilos.scss -o css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "watch": "node-sass ./scss/estilos.scss -o css -w"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "dependencies": {
+    "prettier": "^3.1.0"
+  }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet icon" href="./Imagenes/ppg.jpg">
     <title>Document</title>
     <link rel="stylesheet" href="../css/estilos.css">
@@ -12,31 +12,36 @@
 <body class="pagina">
     
 
-      <nav class="nav"> 
-        <div class="logo"> <img src="../Imagenes/ppg.jpg" alt="logo"></div>
-         <ul class="menu">
-             <li> <a href="../index.html">Home</a></li>
-             <li> <a href="./Nosotros.html">Nosotros</a></li>
-             <li> <a href="./Galeria.html">Galeria</a></li>
-             <li> <a href="./Contacto.html">Contactos</a></li>
-             <li> <div class="Productos">
-                 <button class="btn btn-secondary dropdown-toggle productos" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Productos
-                 </button>
-                 <ul class="dropdown-menu">
-                   <li><a class="dropdown-item" href="./CasillasRurales.html">Casillas Rurales</a></li>
-                   <li><a class="dropdown-item" href="./TalleresRodantes.html">Talleres Rodantes</a></li>
-                   <li><a class="dropdown-item" href="./OficinaMovil.html">Oficinas Moviles</a></li>
-                   <li><a class="dropdown-item" href="./Unidadesobretrineo.html">Unidades Sobre Trineo</a></li>
-                   <li><a class="dropdown-item" href="./Unidadesespeciales.html">Unidades especiales</a></li>
-                   <li><a class="dropdown-item" href="./Motorhome.html">Motorhome</a></li>
-             
-         </ul>
- 
-     </nav>
+  <nav class="nav"> 
+    <div class="logo"> <img src="../Imagenes/ppg.jpg" alt="logo" data-aos="flip-down"></div>
+     <ul class="menu">
+         <li> <a href="../index.html" data-aos="fade-up"
+             data-aos-anchor-placement="bottom-bottom">Home</a></li>
+         <li> <a href="./Nosotros.html" data-aos="fade-up"
+             data-aos-anchor-placement="bottom-bottom">Nosotros</a></li>
+         <li> <a href="./galeria.html" data-aos="fade-up"
+             data-aos-anchor-placement="bottom-bottom">Galeria</a></li>
+         <li> <a href="./Contacto.html" data-aos="fade-up"
+             data-aos-anchor-placement="bottom-bottom">Contactos</a></li>
+         <li> <div class="Productos" data-aos="fade-up"
+             data-aos-anchor-placement="bottom-bottom">
+             <button class="btn btn-secondary dropdown-toggle productos" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+             </button>
+             <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="./CasillasRurales.html">Casillas Rurales</a></li>
+               <li><a class="dropdown-item" href="./TalleresRodantes.html">Talleres Rodantes</a></li>
+               <li><a class="dropdown-item" href="./OficinaMovil.html">Oficinas Moviles</a></li>
+               <li><a class="dropdown-item" href="./Unidadesobretrineo.html">Unidades Sobre Trineo</a></li>
+               <li><a class="dropdown-item" href="./Unidadesespeciales.html">Unidades especiales</a></li>
+               <li><a class="dropdown-item" href="./Motorhome.html">Motorhome</a></li>
+         
+     </ul>
+
+ </nav>
      
      <header>
-        <section class="carousel1">
+        <section class="carouselContainer">
             <p class="descripcion"> Unidades especiales</p>
             <div id="carousel" class="carousel" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -50,11 +55,11 @@
                     <img src="../Imagenes/ofi2.png" class="d-block w-100" alt="foto3">
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
@@ -65,5 +70,7 @@
     
     </header>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init();</script>
 </body>
 </html>

@@ -4,33 +4,35 @@
 @import "body";
 @import "main";
 
-@mixin pad-list-flex{
+@mixin pad-list-flex {
     padding: 10px;
     list-style-type: none;
     display: flex;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.header{
+
+.header {
     grid-area: header;
 }
+
 .info {
     display: flex;
     flex-direction: column-reverse;
     gap: 8px;
     width: 95%;
     min-height: 300px;
-    margin: 0 auto ;
+    margin: 0 auto;
     background-color: $blanco;
     border-radius: 10px;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer{
+.footer {
     grid-area: footer;
 }
 
@@ -43,59 +45,55 @@ img {
     height: auto;
     display: block;
 }
-    
-.titulo{
+
+.titulo {
     font-size: x-large;
     font-family: 'Nunito Sans', sans-serif;
     color: $rojo;
     padding: 50px;
-    }
+}
 
-.carousel1{
-    width: 70%;
-    padding: 150px;
-    height: 50px;
-    margin: 0 auto ;
+
+.carousel {
+
+object-position: center;
+}
+.carouselContainer{
+    width: 70%;    
+    height: 250px;
+    margin: 0 auto;
     background-color: $blanco;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-     }
-
-.carousel2{
-    width: 300px;
-    padding: 150px;
-    display: flex
+    overflow: hidden;
 }
-.carousel{
-    @extend carousel2;
-    justify-content: space-between;
-    align-items: center;
-
-  
-}
-.descripcion{
-    font-size:large;
+.descripcion {
+    font-size: large;
     font-family: 'Nunito Sans', sans-serif;
     color: $rojo;
     padding: 50px;
 
 }
-.Intro{
-      @include pad-list-flex;
-}
-.Intro2{
-    @include pad-list-flex;
-    }
-.Intro3{
+
+.Intro {
     @include pad-list-flex;
 }
-.casilla1{
+
+.Intro2 {
+    @include pad-list-flex;
+}
+
+.Intro3 {
+    @include pad-list-flex;
+}
+
+.casilla1 {
     padding: 10px;
     display: flex;
 }
+
 ul .if {
     width: 50px;
     height: 150px;
@@ -116,53 +114,68 @@ ul .if {
 }
 
 
-.inst{
-    border-radius:  30px;
+.inst {
+    border-radius: 30px;
 }
-.fb{
-    border-radius: 100px;
-}
-.wp{
+
+.fb {
     border-radius: 100px;
 }
 
-.galeriaFotos{
+.wp {
+    border-radius: 100px;
+}
+
+.galeriaFotos {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     justify-content: center;
     color: $rojo;
 }
+
 .fotos {
-    width: auto;
     height: auto;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
 }
-.intro4{
+
+.intro4 {
     width: 70%;
-    height: 500px;
+    height: 700px;
     margin: 0 auto;
     padding: 10px;
     background-color: $blanco;
-        list-style-type: none;
-        display: flex;
-    }
+    list-style-type: none;
+    display: flex;
+}
 
-.formulario{
+.intro5 {
+    width: 70%;
+    height: 900px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ffffff;
+    list-style-type: none;
+    display: flex;
+
+}
+
+.formulario {
     padding: 50px;
     display: flex;
     justify-content: center;
-    }
-label{
+}
+
+label {
     padding: 10px;
 }
 
 
-@media screen and (min-width: 1200px)  {
-    .menu{
-        font-size:24px;
-        padding: 50px;        
+@media screen and (min-width: 1200px) {
+    .menu {
+        font-size: 24px;
+        padding: 50px;
     }
 
     .info {
@@ -179,18 +192,64 @@ label{
     .contact .contact__item {
         flex: unset;
     }
-    
+
 }
+
 @media screen and (min-width: 768px) {
-    .pagina{
-        background-color:$beige;
+    .pagina {
+        background-color: $beige;
     }
+
     .menu a {
-            color: $negro;
-        }
-    .titulo{
         color: $negro;
     }
 
-      }
+    .titulo {
+        color: $negro;
+    }
 
+}
+
+.galeriaTotal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 12px;
+
+    &>img {
+        height: 100%;
+        max-width: none;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.Productos{
+    z-index: 5;
+    position: relative;
+}
+
+.button {
+    outline: none;
+    padding: 4px 8px;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 2px black;
+    transition: all .4s;
+}
+
+.button:hover {
+    transform: scale(1.01) translate(-2px,-2px);
+}
+
+.button:active {
+    transform: scale(1) translate(0px, 0px);
+    box-shadow: 1px 1px black;
+}
+
+.button-success {
+    background-color: limegreen;
+}
+
+.button-danger {
+    background-color: orangered;
+}

@@ -7,6 +7,7 @@
     <title>PPG S.R.L</title>
     <meta name="description" content="Fabrica de casillas rurales, talleres rodantes, trailers, motorhome.">
     <meta name="keywords" content="MOTORHOME, CASILLAS RURALES, CASILLAS DE PASEOGIT">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet icon" href="./Imagenes/ppg.jpg">
     <link rel="stylesheet" href="./css/estilos.css">
 
@@ -14,13 +15,18 @@
 <body class="pagina">
 
     <nav class="nav"> 
-       <div class="logo"> <img src="./Imagenes/ppg.jpg" alt="logo"></div>
+       <div class="logo"> <img src="./Imagenes/ppg.jpg" alt="logo" data-aos="flip-down"></div>
         <ul class="menu">
-            <li> <a href="./index.html">Home</a></li>
-            <li> <a href="./pages/Nosotros.html">Nosotros</a></li>
-            <li> <a href="./pages/galeria.html">Galeria</a></li>
-            <li> <a href="./pages/Contacto.html">Contactos</a></li>
-            <li> <div class="Productos">
+            <li> <a href="./index.html" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">Home</a></li>
+            <li> <a href="./pages/Nosotros.html" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">Nosotros</a></li>
+            <li> <a href="./pages/galeria.html" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">Galeria</a></li>
+            <li> <a href="./pages/Contacto.html" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">Contactos</a></li>
+            <li> <div class="Productos" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                 <button class="btn btn-secondary dropdown-toggle productos" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                  Productos
                 </button>
@@ -39,6 +45,7 @@
     <header>
         <div class="header">
             <p class="titulo">PPG SRL: Líder en Fabricación de Casillas Rurales y Unidades Habitacionales, Certificados ISO 9001 y 14001</p>
+            
         </div>
     </header>
     <section class="info">
@@ -91,5 +98,8 @@
         </ul>
     </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init();</script>
+
 </body>
 </html>
