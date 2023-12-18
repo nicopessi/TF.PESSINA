@@ -2,7 +2,7 @@
 @import "pagina";
 @import "navegador";
 @import "body";
-@import "main";
+@import "section";
 
 @mixin pad-list-flex {
     padding: 10px;
@@ -133,16 +133,15 @@ ul .if {
     color: $rojo;
 }
 
-.fotos {
+.fotos{
     height: auto;
-    margin: 20px auto;
+    margin:  auto;
     display: flex;
     flex-direction: column;
 }
 
 .intro4 {
     width: 70%;
-    height: 700px;
     margin: 0 auto;
     padding: 10px;
     background-color: $blanco;
@@ -152,7 +151,6 @@ ul .if {
 
 .intro5 {
     width: 70%;
-    height: 900px;
     margin: 0 auto;
     padding: 10px;
     background-color: #ffffff;
@@ -170,9 +168,18 @@ ul .if {
 label {
     padding: 10px;
 }
+@media screen and (max-width: 768px){ 
+    .menu2{
+        display: none;
+    }
 
+ }
 
 @media screen and (min-width: 1200px) {
+    .menuHambur{
+        display: none;
+    }
+
     .menu {
         font-size: 24px;
         padding: 50px;
@@ -196,6 +203,9 @@ label {
 }
 
 @media screen and (min-width: 768px) {
+    .menuHambur{
+        display: none;
+    }
     .pagina {
         background-color: $beige;
     }
